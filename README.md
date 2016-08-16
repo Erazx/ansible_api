@@ -1,5 +1,6 @@
 # Ansible API
 基于Flask、Celery开发的Ansible api (ansible==1.6.6)
+Modified from [yumaojun03/ansible_async_api](https://github.com/yumaojun03/ansible_async_api)
 ---
 
 ## Based on
@@ -9,17 +10,17 @@
 
 ## Debug
 1. run develop server: 
-```
-python manage.py runserver
-``` 
+  ```
+  python manage.py runserver
+  ``` 
 2. run celery worker: 
-```
-# ansible use root (Not recommanded)
-export C_FORCE_ROOT=True
-#
-export PYTHONOPTIMIZE=1
-celery -A celery_worker.celery worker --loglevel=debug
-```
+  ```
+  # ansible use root (Not recommanded)
+  export C_FORCE_ROOT=True
+  #
+  export PYTHONOPTIMIZE=1
+  celery -A celery_worker.celery worker --loglevel=debug
+  ```
 
 ## API Usage：
 
