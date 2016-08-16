@@ -1,0 +1,9 @@
+uwsgi:
+    socket: 127.0.0.1:5658
+    chdir: /home/ansible/ansible_api
+    wsgi-file: manage.py
+    callable: app
+    processes: 1
+    threads: 2
+    stats: 127.0.0.1:9191
+    uid: ansible

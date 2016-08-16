@@ -1,0 +1,8 @@
+---
+- hosts: cache1
+  tasks:
+    - name: test
+      shell: time ls
+
+    - name: sleep 2 seconds
+      shell: sleep 2
